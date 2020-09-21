@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Django homework site</title>
+    <link href="{% static 'css/mustard-ui.min.css' %}" rel="stylesheet">
+</head>
+
+<body>
+<nav>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="/">Taken from mustard</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/about_us">About us</a></li>
+            <li><a href="https://www.codifylab.com/" target="_blank">Codify courses</a></li>
+
+        </ul>
+    </div>
+</nav>
+<h1 class="h2">{{header}}</h1>
+
+
+{% block content %}
+
+
+{% endblock %}
+<div class="col col-sm-6 col-lg-3 col-lg-offset-1">
+
+    <ul class="footer-links">
+        <li><a href="/home">Main page</a></li>
+        <li><a href="/about_us">About us</a></li>
+        <li><a href="/contacts">Our contacts</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
